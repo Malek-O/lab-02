@@ -9,8 +9,7 @@ public class Shipment {
     private String name;
     private String address;
     private String phoneNumber;
-    private Logger log = new Logger();
-
+    private Logger log =  Logger.getLoggerInstance();
     private int getRandomNumber() {
         Random ran = new Random();
         return ran.nextInt(Integer.MAX_VALUE);
